@@ -28,7 +28,8 @@ segment .data						    ;Place initialized data here
 ;===== Declare some messages ======================================================================================================
 
 initialmessage db "This X86 program will reverse your array of integers", 10, 0
-prompt db "Enter a sequence of long integers separated by white space. After the last input press enter followed by Control+D: " 10, 0
+prompt db "Enter a sequence of long integers separated by white space. After the last "
+       db "input press enter followed by Control+D: ", 10, 0
 outputinitial db "These numbers were received and placed into the array: ", 10, 0
-outputresult db "After the reverse function these are the numbers of the array in the new order: " 10, 0
+outputresult db "After the reverse function these are the numbers of the array in the new order: ", 10, 0
 outputdetails db "The number of numbers entered is %d and the mean is %d.", 10, 0
